@@ -1,6 +1,6 @@
 # [Movie-Recommender](https://movi-recommender.herokuapp.com/)
 
-# *Recommends simlar movie based upon a sinlge movie input*
+# *Recommends similar movie based upon a single movie input*
 
 ## Technologies used:
 ```  
