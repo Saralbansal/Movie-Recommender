@@ -28,4 +28,6 @@ Run the App:
     py app.py
 <br>
 
+# To use the tmdb_5000_credits dataset, first you will have to unzip the file, then you can use it for further modeling.
+
 # *Enjoy The Recommendations* 😈
