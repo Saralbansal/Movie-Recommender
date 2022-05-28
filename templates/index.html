@@ -1,0 +1,105 @@
+{%extends "base.html"%} {%block content%}
+<!-- Navbar -->
+<section class="showcase">
+  <header>
+    <a href="\">
+      <h3 class="logo"> Movie Recommendations</h3>
+    </a>
+    <ul>
+      <li>
+        <a href="\">Home</a>
+      </li>
+      <li>
+        <a href="\login">login</a>
+      </li>
+      <li>
+        <a href="\register">Register</a>
+      </li>
+      <li>
+        <a href="\about-use">About us</a>
+      </li>
+    </ul>
+    <div class="toggle"></div>
+  </header>
+
+  <!-- NAVBAR END -->
+
+  <!-- <video class="video" src="{{url_for('static', filename ='arnavraghavlund_Trim1.mp4')}}" muted loop autoplay></video> -->
+  <video class="video"
+    src="https://cdn.discordapp.com/attachments/759851314028216350/856592738518433909/arnavraghavlund_Trim1.mp4" muted
+    loop autoplay></video>
+
+  <div class="overlay"></div>
+
+  <!-- MY FORM -->
+  <!-- <div class="text">
+    <form class="theform" action="\submit" method="POST">
+      <div></div>
+      <input
+        type="text"
+        name="movie_name"
+        placeholder="  Movie Name"
+        required
+      /><br />
+      <div></div>
+      <button type="Submit">Hit me</button>
+    </form> -->
+  <!-- END OF MY FORM -->
+
+  <!-- CODEPEN -->
+  <div class="container">
+    <form action="\submit" method="POST">
+      <input type="text" name="movie_name" placeholder="Movie name" required>
+      <div class="search"></div>
+      <div class="button-div">
+        <button class="search-button rainbow rainbow-5" type="Submit">Hit me</button>
+      </div>
+    </form>
+  </div>
+  <!-- CODEPEN END -->
+
+  </div>
+
+
+</section>
+
+
+<!-- SOCIAL -->
+<div class="social">
+  <ul>
+    <li>
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+    </li>
+    <li>
+      <a href=""><i class="fab fa-instagram"></i></a>
+    </li>
+    <li>
+      <a href=""><i class="fab fa-twitter"></i></a>
+    </li>
+    <li>
+      <a href="https://discord.gg/rNXTdZdPGJ" target="_blank"><i class="fab fa-discord"></i></a>
+    </li>
+  </ul>
+</div>
+
+<!-- RESULTS -->
+<ul class="movies">
+  {% for movie in movies %}
+  <li>{{movie}}</li>
+  {% endfor %}
+</ul>
+<div class="error">{{error}}</div>
+
+
+
+<!-- MENU -->
+<div class="menu">
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Trailers</a></li>
+    <li><a href="">Reviews</a></li>
+    <li><a href="">Team</a></li>
+  </ul>
+</div>
+
+{%endblock%}
